@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diving around the world</title>
+    <link rel="shortcut icon" href="./img/turtle.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <!-- la estructura del layout en scroll-->
+
+    <div id="wrapper"> <!-- contenedor general -->
+        <a id="diver" href="#">
+            <img src="./img/icons8-ascent-64.png" alt="buceador ascendiendo">
+        </a>
+
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active">Home</a><!--solo # es el indicio de la pagina-->
+                <a href="#centro">About Us</a>
+                <a href="#cursos">Courses</a>
+                <a href="#galeria">Gallery</a>
+                <a href="#conservacion">Sea preservation</a>
+                <a href="#footer-contacto">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <!--void 0 desactiva el comportamiento por defecto que tiene un vinculo y a cambio activa el onclick-->
+                    <i class="fa fa-bars"></i><!--este es el menu hamburguesa-->
+                </a>
+            </div>
+        </nav>
+
+        <section id="hero">
+            <div id="bubbles" onmouseover="sound('underbubble')" onmouseout="silence('underbubble')">
+                <h1>abysub </h1>
+                <div class="button-container">
+                    <a href="#centro" id="button-bucea"><button
+                            onclick="window.location.href='index_es.html#centro'">Sumérgete
+                            con
+                            nosotros</button></a>
+                    <a href="#centro" id="button-dive" class="english-button"><button>Dive with us</button></a>
+                </div>
+                <audio id="underbubble" preload="auto">
+                    <source src="./sounds/underwater-ambience-6201.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+        </section>
+
+        <!-- Centro SECTION -->
+        <section id="centro">
+            <div class="grid-2"> <!-- esto va a ser el contenedor del grid de 2-->
+                <div id="centro-texto" class="col-2">
+                    <h1 class="title">AbySub Diving School</h1>
+                    <p>Welcome to AbySub, a diving school located in Fuengirola. We offer you the opportunity to explore
+                        the
+                        underwater world
+                        in a safe and enjoyable way. In a comfortable and relaxed environment, a certified PADI
+                        instructor will
+                        guide you
+                        through the best diving spots in Málaga, the Costa del Sol and Andalucía,.</p>
+                </div>
+                <div class="col-2">
+                    <img id="centroimg" src="./img/fachada.jpg" alt="Diving center front picture">
+                </div>
+            </div>
+        </section>
+
+        <!-- Cursos section-->
+        <section id="cursos">
+            <h1 class="title">Courses</h1>
+            <p id="curso-tittle-p">We provide all PADI diving courses, from beginners to instructor level.
+            </p>
+            <div class="grid-4">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="./img/3.jpeg" alt="three underwater divers communicating using hand signs">
+                        <h3>Discover Scuba </h3>
+                        <p>Do you want to experience something diferent and new? We have exactly what you are looking
+                            for. </p>
+                        <button class="button-cursos">Read more...</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card"><img src="./img/4.jpeg"
+                            alt="three divers swimming towards colorful corals and fish.">
+                        <h3>Padi Scuba Diver</h3>
+                        <p>If you have limited time on your holiday then PADI Scuba Diver program is a pre-entry level
+                            certification.
+                        </p>
+                        <button class="button-cursos">Read more...</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card"><img src="./img/5.jpg" alt="A female diver near a rock with fish underwater.">
+                        <h3>Open Water Diver</h3>
+                        <p>During the Open Water Course you will learn all the techniques needed to move your body and
+                            equipment
+                            safely underwater. </p>
+                        <button class="button-cursos">Read more...</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card"><img src="./img/6.jpg"
+                            alt="A female diver taking a photograph of a sea turtle at the bottom of the sea.">
+                        <h3>Advance Diver</h3>
+                        <p>During this course, you will refine your diving skills and explore new diving adventures such
+                            as deep and
+                            night diving.</p>
+                        <button class="button-cursos">Read more...</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- galeria section-->
+        <section id="galeria">
+            <h1 class="title">Gallery</h1>
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal0.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal1.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal2.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal3.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal4.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal5.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal6.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal7.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal8.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal9.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal10.jpg" alt="underwater image" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slide_img" src="./img/gal11.jpg" alt="underwater image" style="width:100%">
+                </div>
+
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+            </div>
+
+
+            <!-- conservacion section-->
+        </section>
+        <section id="conservacion">
+            <h1 class="title">Sea preservation</h1>
+            <div>
+                <div class="grid-conservacion">
+                    <div class="colu-3">
+                        <div class="card">
+                            <img src="./img/conservacion1.jpg" alt="Sea turtle entangled in fishing nets">
+                        </div>
+                    </div>
+                    <div class="colu-3">
+                        <div class="card"><img src="./img/conservacion2.jpg"
+                                alt="Diver coming out of the sea with fishing nets in hand">
+                        </div>
+                    </div>
+                    <div class="colu-3">
+                        <div class="card"><img src="./img/conservacion3.jpg" alt="Garbage collected from the sea">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>The marine preservation is a fundamental aspect in the diving world. Diving into the depths of the
+                    ocean
+                    provides us not
+                    only with an amazing experience but also with the responsibility to protect these vulnerable and
+                    precious
+                    ecosystems.<span id="dots">...<br></span><span id="more">
+                        <br>Diving connects us directly to the beauty and fragility of the oceans. <br><br>As we explore
+                        these
+                        underwater
+                        environments, we become privileged witnesses of marine life in its most natural state. It's
+                        essential to
+                        recognize the
+                        importance of preserving these underwater habitats, home to countless species and vital
+                        contributors to the
+                        health of
+                        our planet.<br><br>
+                        As divers, we have the opportunity and responsibility to be guardians of the oceans. Our actions
+                        and
+                        behaviors have a
+                        direct impact on marine conservation.<br><br>From practicing responsible and ethical diving to
+                        educating and
+                        raising awareness about the environmental issues our
+                        seas face, every step counts. Marine conservation in diving involves not only enjoying the
+                        beauty of the
+                        ocean but also
+                        protecting it for future generations. <br><br>Adopting sustainable practices, avoiding harm to
+                        coral reefs,
+                        and respecting marine life are just a few ways divers can
+                        contribute to preserving these fragile ecosystems. <br><br>
+
+                        Together, as a community of diving enthusiasts, we hold the power to make a difference. By
+                        uniting to
+                        protect and
+                        conserve our oceans, we ensure that these extraordinary aquatic environments remain a treasure
+                        to be enjoyed
+                        and admired
+                        for generations to come. <br><br>
+
+                        Marine conservation isn't merely a choice; it's a responsibility that all divers can and should
+                        embrace.
+                    </span></p>
+
+                <button onclick="toggleReadMoreEnglish()" id="myBtn">Read more</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="grid-3d">
+                <div class="col-4">
+                    <h3 id="footer-contacto">Follow us </h3>
+                    <a href="whatsapp://send?phone=34657644906" target="_blank"><i class="fa fa-whatsapp"
+                            aria-hidden="true"></i></a>
+                    <!-- <a href="https://api.whatsapp.com/send?phone=34657644906" target="_blank"><i class="fa fa-whatsapp"
+              aria-hidden="true"></i></a> -->
+                    <a href="https://www.facebook.com/abysub.scubadivingmalaga/" target="_blank"><i
+                            class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.tripadvisor.es/Attraction_Review-g315915-d1739575-Reviews-Abysub-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html#REVIEWS"
+                        target="_blank"><i class="fa fa-tripadvisor" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/abysubdiving/?hl=es" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <h3>Official website</h3>
+                    <a id="sitio-oficial" href="https://www.abysub.com/" target="_blank">AbySub</a>
+                    <!-- Trigger/Open The Modal -->
+                    <div id="modal-section">
+
+                        <button id="myBtnModal">Credits</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Proyecto educativo</h2>
+                                <p>Esta web está realizada con fines educativos</p>
+                                <a href="https://github.com/bcolomer" target="_blank">GitHub: bcolomer</a>
+
+                                <p>
+                                    Proyecto web Lenguaje de Marcas CPIFP Alan Turing, Malaga. 1ªDAW 23/24</p>
+
+
+                                <h3>Imagenes</h3>
+                                <ol>
+                                    <li> <a href="https://www.flaticon.es/icono-gratis/tortuga_7335393?term=tortuga+marina&page=1&position=10&origin=tag"
+                                            target="_blank">Favicon</a>
+                                    </li>
+
+                                    <li>Paisaje submarino de Hero Section: Imagen de <a
+                                            href="https://www.freepik.es/foto-gratis/paisaje-submarino_43464718.htm#query=coral&position=29&from_view=search&track=sph&uuid=e940d419-25bc-44d3-b5f2-aa47236142d4"
+                                            target="_blank">Freepik</a>
+                                    </li>
+                                    <li>Imágenes de galería, de centro y de la sección de conservación marina: obtenidas
+                                        de la paginas
+                                        oficial de Abysub, Facebook e Instagram.</li>
+                                    <li>Imágenes de cursos:
+                                        <ul>
+                                            <li> <a href="https://www.thesavvyglobetrotter.com/scuba-diving-bucket-list/"
+                                                    target="_blank">Buceador
+                                                    avanzado</a></li>
+                                            <li> <a href="https://www.buceopedia.com/sobre-mi/" target="_blank">Bautismo
+                                                    de buceo</a></li>
+                                            <li> <a href="https://turismo.euskadi.eus/es/top-viajes/bautismo-de-buceo-en-hondarribia/aa30-12378/es/"
+                                                    target="_blank">Open
+                                                    Water</a></li>
+                                            <li> <a href="https://www.travelphant.com/4-amazing-scuba-diving-spots-in-egypt/"
+                                                    target="_blank">Padi Scuba</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li> <a href="hhttps://iconos8.es/icon/AuK6L5Q1QcOz/ascent"
+                                            target="_blank">Buzo-anchor</a></li>
+                                </ol>
+                                <h3>Fuentes</h3>
+                                <ul>
+                                    <li> <a href="https://www.ffonts.net" target="_blank">Garamond y garamonb</a>
+                                    </li>
+                                    <li> <a href="https://www.1001freefonts.com/es/aima-duo.font" target="_blank">Aima
+                                            duo</a>
+                                    </li>
+                                    <li> <a href="https://www.fontspace.com/lost-fish-font-f31048"
+                                            target="_blank">Diving</a>
+                                    </li>
+                                    <li> <a href="https://www.1001freefonts.com/es/embolism-spark.font"
+                                            target="_blank">Embolism</a>
+                                    </li>
+
+                                </ul>
+
+                                <h3>Sonidos</h3>
+                                <p>Underwater ambience: Sound Effect from <a
+                                        href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=6201"
+                                        target="_blank">Pixabay</a>
+                                </p>
+                                <h3>Code Snippets</h3>
+                                <p>obtenidos de w3schools</p>
+                                <ul>
+                                    <li> Responsive Topnav</li>
+                                    <li> Menu Icon</li>
+                                    <li> Read More Read Less Button</li>
+                                    <li> Slideshow</li>
+                                    <li> CSS/JS Modal</li>
+                                </ul>
+                                <p>Estilos de <a href="https://neumorphism.io" target="_blank">boton</a> </p>
+                                <br>
+                                <p>Licencia copyright</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="#">
+                        <p>Home</p>
+                    </a>
+                    <a href="#centro">
+                        <p>About Us</p>
+                    </a>
+                    <a href="#cursos">
+                        <p>Courses</p>
+                    </a>
+                    <a href="#galeria">
+                        <p>Gallery</p>
+                    </a>
+                    <a href="#conservacion">
+                        <p>Sea preservation</p>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <div class="container">
+                        <iframe class="responsive-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d801.370714638506!2d-4.618929030412216!3d36.54246879827012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72e2420e21b8a9%3A0x285281593e7bd553!2sAbysub%20Escuela%20de%20buceo!5e0!3m2!1ses!2ses!4v1702035485838!5m2!1ses!2ses"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--enlaza los js del wbsite se pone al final para permmitir cargar la pagina completa antes de que se carguen las funciones-->
+    <script src="./js/functions.js"></script>
+
+</body>
+
+</html>

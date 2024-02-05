@@ -1,0 +1,664 @@
+/****************************************************************/
+/*        Style sheet for Buceando por el mundo web site        */
+/*        author: Barbara Colomer                               */
+/*        version: Bootstrap                                    */
+/*        comments: class project 2023-24                       */
+/****************************************************************/
+
+@font-face {
+      font-family: aima;
+      src: url(../fonts/AimaDisplay.ttf);
+}
+@font-face {
+      font-family: garamonb;
+      src: url(../fonts/Garamonb.ttf);
+}
+@font-face {
+      font-family: diving;
+      src: url(../fonts/LostFish.ttf);
+}
+@font-face {
+      font-family: garamond;
+      src: url(../fonts/Garamond.ttf);
+    }
+@font-face {
+      font-family: embolism;
+      src: url(../fonts/Embolism.ttf);
+}
+
+
+/****hero****/
+#hero {
+    background-image: url('../img/paisaje-submarino1.jpg');
+    background-size: cover; 
+    background-position: center;/
+}
+.bg-aqua{
+    background-color: #05D1D8;
+}
+/*
+
+* {
+  box-sizing:border-box;
+}   /* con maquetación compleja SIEMPRE 
+
+body {
+  margin:0;   /* para desactivar el espacio de separación por defect
+  padding: 0;    
+  background-color: #05D1D8;
+  font-family: garamondb;
+}
+
+#wrapper {
+  background-color:#05D1D8;
+  width:98%;        /* ancho fijado al 100%  MOBILE FIRS
+  margin: auto ;    /* centrado automático 
+
+html {
+  scroll-behavior: smooth;/*esto suaviza todos las bajadas de scr
+}
+
+h1 {
+  color: white;
+  font-family: aima;
+  font-size: 1.8em;
+  text-align: center;
+  padding-top: 3%;
+}
+
+/*********nav styles (from w3schools)*********
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  margin-bottom: 0%;/*que se quede pegada arriba
+}
+
+#diver{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+ /* Add a black background color to the top navigatio
+.topnav {
+  background-color: #05D1D8;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+/* Style the links inside the navigation b
+.topnav a {
+  float: left; /*que se pegue a la iaquier
+  display: block;
+  color: #f2f2f2; /*esto le quita el color tipico az
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /*para que no se subraye el vincu
+  font-size: 1.5em; /*cambiar px por e
+  font-weight: bolder;
+  color: #03678B;
+}
+
+/* Change the color of links on hover
+.topnav a:hover {
+  background-color: #4AB0BF;
+  color: #e7f0f3;
+  border-radius: 0% 0% 15% 15%;
+}
+
+/* Hide the link that should open and close the topnav on small screens 
+.topnav .icon {
+  display: none;
+} 
+
+
+#hero {
+  background-image: url(../img/paisaje-submarino1.jpg);
+  height:95vh;    /* el 100% del alto de la ventana del navegador
+  background-size: cover;
+  background-position:center;
+  text-align: center;
+  position: relative;  /**** contenedor relativo ** 
+}
+
+#hero h1 {
+  font-family: diving;
+  font-size: 3em;
+  color: white;
+  padding-top: 3%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente
+  margin-top: 90px;
+}
+
+#button-bucea,
+#button-dive {
+  margin: 0 5px; /* Espacio entre los boton
+  margin-top: 10px; /* Margen superior para ajustar la posición vertica
+}
+
+#button-bucea button,
+#button-dive button {
+  /* Estilos comunes para ambos botone
+  background-color: #0BACD0;
+  font-family: embolism;
+  color: white;
+  font-size: 1.8em;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+#button-bucea button:hover,
+#button-dive button:hover {
+  /* Estilos al pasar el ratón por en
+  background-color: white;
+  color: #0BACD0;
+  border: 1px solid white;
+}
+
+#bubbles{
+  width: 90%;
+  height: 90%;
+/*border: 4px solid rgb(247, 243, 15); se coloca un borde visible para encontrarlo al momento de posicionarlo/
+  position: absolute; 
+  top: 5%;
+  left: 5%;
+}
+
+/******************  Centro  SECTION (GRID-2) **************
+#centro{
+  margin-top: 5%;
+}
+
+.grid-2 {
+  display:grid;
+  grid-template-columns: 100%;/*** MOBILE FIRST *
+}
+
+.col-2 {
+  padding:4%;
+}
+
+#centroimg {
+  width:100%;
+  display:block;
+  margin:auto;
+  border-radius: 30px;
+}
+
+#centro h1{
+  color: #023b54;
+  font-family: aima;
+  font-weight: bolder;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+#centro p {
+  font-size: 1.4em;
+  color: #023b54;
+  font-family:garamond;
+  font-weight: bolder;
+  text-align: justify;
+  line-height: 1.3;
+}
+
+/
+
+#cursos {
+  color: white;
+  font-family: garamond;
+  text-align: justify;
+  font-size: 1.4em;
+  background-color: #0155D2;
+  border-radius: 20px;
+}
+
+#cursos h1{
+  color: white;
+  padding-bottom: 0;
+  font-family: aima;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+#cursos h3{
+  font-family: garamonb;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#cursos .container {
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+}
+
+#cursos p{
+  padding: 2% 5%;
+  font-family: garamond;
+}
+
+#curso-tittle-p{
+  font-size: 1.5em;
+  color: white;
+  font-family:garamond;
+  font-weight: bolder;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 2% 5%; 
+}
+
+.card {color: #04425D;
+  border: 1px solid gray;
+  background-color: #B5E2DD;
+  border-radius: 20px;
+  padding: 2%; /* Reducir el relleno para permitir que el contenido tenga más espa
+  height: 100%; /* Altura fija para las tarjetas *
+  display: flex; /* Utilizar flexbox para el diseño intern
+  flex-direction: column; /* Apilar elementos verticalment
+}
+
+.card img {
+  margin-top: 3%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  
+  text-align:start; /* Centrar el te
+  padding: 0 10px; /* Agregar un relleno izquierdo y derech
+  margin: 0; /* Eliminar el margen predeterminad
+
+}
+
+.button-cursos{
+  border-color: #7b9a96;
+  color: #04425D;
+  font-size: 0.6em;
+  border-radius: 40px;
+  background: #B5E2DD;
+  box-shadow: inset -9px -9px 18px #7b9a96,
+              inset 9px 9px 18px #efffff;
+  align-self: flex-end; /* Coloca el botón al final de la tar
+  margin-top: auto; /* Asegura que el botón esté pegado al final, sin importar la cantidad de conte
+}     
+      
+/* Ajustar grid o flexbox para la disposición de las tarjetas 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); ar fracciones flexibles para las co
+  gap: 5px; Espacio entre las tarjet
+}
+
+.card:hover {
+  box-shadow: 3px 3px 5px #808080;
+}
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+h1{
+  color: #023b54;
+  font-family: aima;
+  font-size: 1.8em;
+  text-align: center;
+  }
+
+.mySlides {
+  display: none;
+}
+
+.slide_img{
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+
+}
+ 
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.grid-conservacion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /
+  gap: 5px; /
+
+.colu-3{
+  margin: 3%;
+}
+
+#mas {
+  display: none;
+}
+#more {
+  display: none;
+}
+ 
+ #conservacion {
+  color: white;
+  font-family: garamond;
+  text-align: justify;
+  font-size: 1.4em;
+  background-color: #0155D2;
+  border-radius: 20px;
+  margin-top: 3%;
+  padding: 3%;
+  margin-bottom: 3%;
+}
+
+#conservacion h1{
+  color: white;
+  padding-bottom: 0;
+  font-family: aima;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+#conservacion h3{
+  font-family: garamonb;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#myBtn{
+  border-color: #7b9a96;
+  color: #04425D;
+  font-size: 0.6em;
+  border-radius: 40px;
+  background: #05D1D8;
+  box-shadow: inset -9px -9px 18px #7b9a96,
+              inset 9px 9px 18px #efffff;
+  align-self: flex-end; /
+  margin-top: auto; /
+}   
+
+.grid-4 {
+  display: grid;
+}
+
+
+footer {
+  background-color: #010D3D;
+  color:white;
+}
+
+.grid-3d {
+  display:grid;
+  grid-template-columns: auto auto; 
+}
+
+.col-4 {
+  padding:4%;
+}
+
+footer h3{
+  margin: 20px 0;
+}
+
+footer .fa{
+  padding: 15px 10px;
+  font-size: 1.5em;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+footer .fa-whatsapp{
+  background-color: #25D366;
+}
+ 
+footer .fa-instagram{
+  background-color: #D43089;
+}
+
+footer .fa-tripadvisor{
+  background-color: #00af87;
+}
+footer #sitio-oficial{
+  font-family: diving;
+}
+
+footer .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+footer .responsive-iframe {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  bottom: 0;
+  right: 0;
+  height: 80%;
+}
+
+footer a p{
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  border:hidden;
+}
+
+footer a p:hover {
+  color:rgb(196, 195, 195);
+  border-left: 3px solid white;
+  padding-left: 10px;
+  transition: 1s;
+}
+
+
+
+
+
+
+
+
+ #modal-section{
+  margin-top: 10%;
+ }
+
+.modal {
+  display: none; 
+  position: fixed; /
+  z-index: 1; /
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+  color: #010D3D;
+  background-color: #95bdc4;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+#myBtnModal{
+  border-radius: 10px;
+  background: linear-gradient(145deg, #d4ffff, #b2dbe2);
+  box-shadow:  8px 8px 16px #0c124d,
+              -8px -8px 16px #0c124d;
+  padding: 3%;
+}
+
+
+.close {
+  color: #110466;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+
+
+
+@media only screen and (width>650px){   
+  #wrapper {
+    width:90%;
+  }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2%;
+    margin: 2%;
+  }
+  #conservacion{
+    padding: 6%;
+  }
+}
+
+@media only screen and (width>900px){   
+  .grid-2 {
+    grid-template-columns:50% 50%;
+  }
+  .grid-3d {
+    grid-template-columns: 25% 25% 50%;
+  }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1%;    
+  }
+  #conservacion{
+    padding: 7%;
+  }
+  footer .responsive-iframe {
+  height: 50%; 
+  }
+}
+
+
+
+ @media screen and (max-width: 912px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+*/
+
