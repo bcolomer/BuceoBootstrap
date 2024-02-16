@@ -34,6 +34,14 @@
     background-position: center;/
 }
 
+#diver{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+
 /***background colors ******/
 .bg-aqua{
     background-color: #05D1D8;
@@ -44,25 +52,48 @@ color: #023b54;
 .bg-oceanblue{
 background-color: #0155D2;
 }
-.bg-marismas{
+.bg-fosasabisales{
 background-color: #010D3D
 }
 
-.greylight{
+/*************************/
+.text-greylight{
 color: #f2f2f2;
 }
 .deepsea{
 color: #03678B;
 }
+.btn-aqua{
+    background-color:#05D1D8;
+    border-color: white;
+    color: white;
 
-
-
-#diver{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
 }
+.btn-aqua:hover{
+    color: #eaeefa;
+    font-weight:bolder;
+    font-size: larger;
+   
+}
+/************* FONT STYLES ************/
+
+.wavesnavbar{
+    color: #f2f2f2;
+    font-family: diving;
+    font-size: 1.30em;  
+    
+}
+.wavesnavbar:hover{
+    color: #010D3D;
+   
+}
+
+/************* SIZES ************/
+
+.w-35{
+    width: 35%;
+}
+
 /*
 
 * {
@@ -93,21 +124,6 @@ h1 {
   padding-top: 3%;
 }
 
-/*********nav styles (from w3schools)*********
-
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 99;
-  margin-bottom: 0%;/*que se quede pegada arriba
-}
-
-#diver{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-}
 
  /* Add a black background color to the top navigatio
 .topnav {
