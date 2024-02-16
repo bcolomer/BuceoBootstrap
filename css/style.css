@@ -33,9 +33,30 @@
     background-size: cover; 
     background-position: center;/
 }
+
+/***background colors ******/
 .bg-aqua{
     background-color: #05D1D8;
 }
+.bg-deepblue{
+color: #023b54;
+}
+.bg-oceanblue{
+background-color: #0155D2;
+}
+.bg-marismas{
+background-color: #010D3D
+}
+
+.greylight{
+color: #f2f2f2;
+}
+.deepsea{
+color: #03678B;
+}
+
+
+
 #diver{
   position: fixed;
   bottom: 20px;
