@@ -10,7 +10,7 @@
       src: url(../fonts/AimaDisplay.ttf);
 }
 @font-face {
-      font-family: garamonb;
+      font-family: garamonbb;
       src: url(../fonts/Garamonb.ttf);
 }
 @font-face {
@@ -55,6 +55,9 @@ background-color: #0155D2;
 .bg-fosasabisales{
 background-color: #010D3D
 }
+.bg-mexicansea{
+background-color: #B5E2DD;
+}
 
 /********** TEXT COLORS ***************/
 .text-greylight{
@@ -78,6 +81,21 @@ color: #010D3D
    
 }
 /************* FONT STYLES ************/
+.aima{
+font-family: aima;
+}
+
+.garamondb{
+font-family: garamondb;
+}
+
+.garamonbb{
+font-family: garamonbb;
+}
+
+.embolism{
+font-family: embolism;
+}
 
 .wavesnavbar{
     color: #010D3D;
@@ -89,13 +107,9 @@ color: #010D3D
     color: #f2f2f2;
 }
 
-.sectiontitles{
-    font-family: aima;
-}
 
-.sectiontext{
-    font-family: garamondb;
-}
+
+
 
 
 
