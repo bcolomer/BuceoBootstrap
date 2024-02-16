@@ -64,12 +64,83 @@ Sobre ella he colocado dos Call to Action, uno que te lleva a todas las seccione
 <h3>Sonido</h3>
 <p>He añadido un sonido del ruido que se escucha cuando uno esta buceando, que suena solo cuando se pase el ratón sobre la HeroSection </p>
 <h2 id="snippets">Code snippets</h2>
-<p>He utilizado code snippets obtenidos de la seccion -how to- de W3Schools</p>
+<p>He utilizado code snippets obtenidos de Bootstrap:</p>
 <ul>
 <li> Responsive Topnav</li>
-<li> Menu Icon</li>
+<li> Carousel</li>
 <li> Read More Read Less Button</li>
-<li> Slideshow</li>
-<li> CSS/JS Modal</li>
+<li> Card</li>
+<li> Contact form</li>
+<li> Modal window</li>
+
 </ul>
 
+<h2>CREDITOS</h2>
+                       
+
+
+                        <h3>Imagenes</h3>
+                        <ol>
+                            <li> <a href="https://www.flaticon.es/icono-gratis/tortuga_7335393?term=tortuga+marina&page=1&position=10&origin=tag"
+                                    target="_blank">Favicon</a>
+                            </li>
+
+                            <li>Paisaje submarino de Hero Section: Imagen de <a
+                                    href="https://www.freepik.es/foto-gratis/paisaje-submarino_43464718.htm#query=coral&position=29&from_view=search&track=sph&uuid=e940d419-25bc-44d3-b5f2-aa47236142d4"
+                                    target="_blank">Freepik</a>
+                            </li>
+                            <li>Imágenes de galería, de centro y de la sección de conservación marina: obtenidas
+                                de la paginas
+                                oficial de Abysub, Facebook e Instagram.</li>
+                            <li>Imágenes de cursos:
+                                <ul>
+                                    <li> <a href="https://www.thesavvyglobetrotter.com/scuba-diving-bucket-list/"
+                                            target="_blank">Buceador
+                                            avanzado</a></li>
+                                    <li> <a href="https://www.buceopedia.com/sobre-mi/" target="_blank">Bautismo
+                                            de buceo</a></li>
+                                    <li> <a href="https://turismo.euskadi.eus/es/top-viajes/bautismo-de-buceo-en-hondarribia/aa30-12378/es/"
+                                            target="_blank">Open
+                                            Water</a></li>
+                                    <li> <a href="https://www.travelphant.com/4-amazing-scuba-diving-spots-in-egypt/"
+                                            target="_blank">Padi
+                                            Scuba</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li> <a href="hhttps://iconos8.es/icon/AuK6L5Q1QcOz/ascent" target="_blank">Buzo-anchor</a>
+                            </li>
+                        </ol>
+                        <h3>Fuentes</h3>
+                        <ul>
+                            <li> <a href="https://www.ffonts.net" target="_blank">Garamond y garamonb</a>
+                            </li>
+                            <li> <a href="https://www.1001freefonts.com/es/aima-duo.font" target="_blank">Aima
+                                    duo</a>
+                            </li>
+                            <li> <a href="https://www.fontspace.com/lost-fish-font-f31048" target="_blank">Diving</a>
+                            </li>
+                            <li> <a href="https://www.1001freefonts.com/es/embolism-spark.font"
+                                    target="_blank">Embolism</a>
+                            </li>
+
+                        </ul>
+
+                        <h3>Sonidos</h3>
+                        <p>Underwater ambience: Sound Effect from <a
+                                href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=6201"
+                                target="_blank">Pixabay</a>
+                        </p>
+                        <h3>Code Snippets</h3>
+                        <p>obtenidos de w3schools</p>
+                        <ul>
+                            <li> Responsive Topnav</li>
+                            <li> Menu Icon</li>
+                            <li> Read More Read Less Button</li>
+                            <li> Slideshow</li>
+                            <li> CSS/JS Modal</li>
+                        </ul>
+                        <p>Estilos de <a href="https://neumorphism.io" target="_blank">boton</a> </p>
+                        <br>
+                        <p>Licencia copyright</p>

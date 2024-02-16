@@ -1,6 +1,18 @@
 /********************************************
+ *  funcion sonido burbujas
+ ******************************************/ 
+function sound(element){
+  document.getElementById(element).play();
+}
+function silence(element){
+  document.getElementById(element).pause();
+}
+
+
+
+/********************************************
  *    función de validación
- */
+ *******************************************/
 
 
 function validacion(){

@@ -7,21 +7,28 @@
     <title>Diving around the world</title>
     <link rel="shortcut icon" href="./img/turtle.png" type="image/x-icon">
     <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="bg-aqua">
     <div id="wrapper" class="container bg-white px-0">
+        <a id="diver" href="#">
+            <img src="./img/icons8-ascent-64.png" alt="buceador ascendiendo">
+        </a>
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">ABYsub</a>
+                <a class="navbar-brand" href="#"><img src="./img/logo.jpg" class="w-25 rounded-circle"
+                        alt="logo AbySub"> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"><!-- me mb margin end margin bottom   -->
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -47,17 +54,21 @@
 
 
 
+
         <header id="hero" class="vh-100 d-flex justify-content-center gap-2 align-items-center">
             <button class="btn btn-warning mb-8 border p-3 rounded-5">Dive with us</button>
-            <button class="btn btn-primary mb-8 border p-3">Sumergete con nosotros</button>
-        </header>
+            <div id="bubbles" onmouseover="sound('underbubble')" onmouseout="silence('underbubble')">
 
+                <audio id="underbubble" preload="auto">
+                    <source src="./sounds/underwater-ambience-6201.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </header>
         <section id="centro" class="">
             <h1 class="">AbySub Diving School</h1>
             <div class="container">
                 <div class="row g-5">
                     <div class="col-12 col-md-6">
-
                         <p>Welcome to AbySub, a diving school located in Fuengirola. We offer you the opportunity to
                             explore
                             the
@@ -80,12 +91,7 @@
             </p>
             <div class="container">
                 <div class="row g-3">
-
-
-
-
                     <div class="col-12 col-md-6 col-lg-3 col.xxl-2">
-                        <!-- card from bootsrap esto es que ocupe 12 columnas en el tamaño mas pequeño, para tablet que coja 6 columnas por card y en la siguiente que use 3 y asi  -->
                         <div class="card p-3 rounded-0 shadow">
                             <img src="./img/3.jpeg" class="card-img-top rounded-0"
                                 alt="three underwater divers communicating using hand signs">
@@ -97,10 +103,8 @@
                                     more</a>
                             </div>
                         </div>
-                    </div><!-- end of card  -->
-
+                    </div>
                     <div class="col-12 col-md-6 col-lg-3 col.xxl-2">
-                        <!-- card from bootsrap esto es que ocupe 12 columnas en el tamaño mas pequeño, para tablet que coja 6 columnas por card y en la siguiente que use 3 y asi  -->
                         <div class="card p-3 rounded-0 shadow">
                             <img src="./img/4.jpeg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body">
@@ -112,9 +116,8 @@
                                     more</a>
                             </div>
                         </div>
-                    </div><!-- end of card  -->
+                    </div>
                     <div class="col-12 col-md-6 col-lg-3 col.xxl-2">
-                        <!-- card from bootsrap esto es que ocupe 12 columnas en el tamaño mas pequeño, para tablet que coja 6 columnas por card y en la siguiente que use 3 y asi  -->
                         <div class="card p-3 rounded-0 shadow">
                             <img src="./img/5.jpg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body">
@@ -127,9 +130,8 @@
                                     more</a>
                             </div>
                         </div>
-                    </div><!-- end of card  -->
+                    </div>
                     <div class="col-12 col-md-6 col-lg-3 col.xxl-2">
-                        <!-- card from bootsrap esto es que ocupe 12 columnas en el tamaño mas pequeño, para tablet que coja 6 columnas por card y en la siguiente que use 3 y asi  -->
                         <div class="card p-3 rounded-0 shadow">
                             <img src="./img/6.jpg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body">
@@ -143,17 +145,8 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
             </div>
-
-
-
-
         </section>
         <section id="gallery">
             <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
@@ -198,127 +191,294 @@
                 </button>
             </div>
         </section>
-
-        <section id="Contact>
-            <div class=" container">
-            <div class="row">
-                <div class="col p-5 bg-primary">
-                    <h1>
-                        donde estamos:
-                    </h1>
-                    <ul class="list-group mt-5 mx-auto">
-                        <li class="list-group-item">telefono:952487596</li>
-                        <li class="list-group-item">EMAIL: kjsdfsj@dfasd.com</li>
-                        <li class="list-group-item">direccion: c/fredrick terman </li>
-                    </ul>
-                    <div class="ratio ratio-1x1 mt-5 w-75 mx-auto">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.2505294603543!2d-4.557037724622272!3d36.74055717226425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f10963ce0f3d%3A0x310ae7d4bb2e8f7b!2sCPIFP%20Alan%20Turing!5e0!3m2!1ses!2ses!4v1707212427346!5m2!1ses!2ses"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div> <!-- end of card  -->
-                <div class="col p-5">
-                    <form action="" method="post" onsubmit="return validacion()" class="row g-3 ">
-                        <h2>Send us a message</h2>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Name: <span class="text-danger"> *</span></label>
-                            <input onchange="resetear('nombre')" type="text" class="form-control" id="nombre"
-                                name="nombre" aria-describedby="nombreHelp"><!--el name es para el backend-->
-                            <div id="nombreHelp" class="form-text text-danger">Name mandatory</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="apellidos" class="form-label">Last Name: <span class="text-danger">
-                                    *</span></label>
-                            <input onchange="resetear('apellidos')" type="text" class="form-control" id="apellidos"
-                                name="apellidos" aria-describedby="apellidosHelp">
-                            <div id="apellidosHelp" class="form-text text-danger">Last Name mandatory</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email: </label>
-                            <input onchange="resetear('email')" type="text" class="form-control" id="email" name="email"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text text-danger">Give us a way to contact you back</div>
-                        </div>
-                        <div class="mb-3 ">
-                            <div class="mb-3">
-                                <label for="validationTextarea" class="form-label">Write your message:</label>
-                                <textarea class="form-control" id="validationTextarea"
-                                    placeholder="Your message ..."></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12 my-5 form-check">
-                            <input type="checkbox" class="form-check-input" id="terminos">
-                            <label class="form-check-label" for="terminos">
-                                <a id="trigger" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                    class="text-primary fw-bold text-decoration-none">
-                                    Agree to terms and conditions</a></label>
-                            <div id="terminosHelp" class="form-text text-danger">You must agree before submitting.
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
-                        </div>
-                    </form>
-
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">TERMS AND CONDITIONS</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. A soluta magni beatae nam
-                                    cumque debitis nulla eaque sequi cum facilis! At quam beatae numquam aspernatur
-                                    commodi eaque aliquam exercitationem quod.
-                                    Quo suscipit deleniti ad doloribus magnam omnis cupiditate, vero debitis error
-                                    praesentium aspernatur? Accusantium ducimus eos sapiente, sunt rem architecto nemo
-                                    placeat esse quo earum commodi, dolores minima quod id!
-                                    Sint reprehenderit perferendis incidunt, laudantium ratione consectetur
-                                    exercitationem autem quibusdam iusto quae aliquam culpa, necessitatibus eum
-                                    doloribus aliquid, voluptas tempore maxime assumenda natus consequuntur magni.
-                                    Nesciunt eaque reiciendis doloribus dignissimos!
-                                    Eveniet ex non sequi dolor voluptas accusamus quasi eligendi maiores quidem. Rem
-                                    quisquam asperiores aliquid ad non iure sint quia vitae, dolores consequuntur
-                                    necessitatibus reiciendis ipsa commodi dignissimos porro voluptatibus.
-                                    Cum maxime minus sequi eveniet voluptatum obcaecati, voluptas nostrum rem repellat
-                                    accusantium quisquam repudiandae tempore debitis inventore facilis, reiciendis in
-                                    cupiditate quas assumenda vero? Repellendus dolore vero praesentium quas culpa.
-                                    Ab alias eum dolores vitae nihil aliquam, sed totam. Accusantium eveniet
-                                    perferendis, quia vel sequi saepe, recusandae animi earum dolore aliquid ipsam
-                                    suscipit iure dolor quam adipisci nostrum obcaecati vero.
-                                    Eos saepe accusantium tempore veniam, totam maiores. Necessitatibus ratione amet
-                                    fuga voluptates temporibus, doloremque magnam voluptas, atque labore laudantium
-                                    deleniti ipsam voluptate ad praesentium voluptatibus? Amet est nesciunt iusto
-                                    officiis!
-                                    Assumenda nihil vero sed dolor corrupti saepe doloremque facilis commodi? Neque
-                                    totam praesentium quaerat, facilis expedita doloribus quod libero quia, vero,
-                                    accusamus harum ducimus voluptate impedit mollitia. Sunt, at perspiciatis.
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Understood</button>
-
-                                </div>
-                            </div>
+        <section id="conservacion">
+            <h1 class="title">
+                Sea preservation
+            </h1>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-md-4 col-lg-4 col.xxl-4">
+                        <!-- card from bootsrap esto es que ocupe 12 columnas en el tamaño mas pequeño, para tablet que coja 6 columnas por card y en la siguiente que use 3 y asi  -->
+                        <div class="card">
+                            <img src="./img/conservacion1.jpg" class="card-img-top" alt="...">
                         </div>
                     </div>
-
+                    <div class="col-12 col-md-4 col-lg-4 col.xxl-4">
+                        <div class="card">
+                            <img src="./img/conservacion2.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 col.xxl-4">
+                        <div class="card">
+                            <img src="./img/conservacion3.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <p>
+                                The marine preservation is a fundamental aspect in the diving world. Diving into the
+                                depths of the ocean provides us not only with an amazing experience but also with the
+                                responsibility to protect these vulnerable and precious ecosystems. ...
+                            </p>
+                        </button>
+                    </h2>
+                    <div class="accordion-item">
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Diving connects us directly to the beauty and fragility of the oceans.
+                                </p>
+                                <p>
+                                    As we explore these underwater environments, we become privileged witnesses of
+                                    marine life in its most natural state. It's essential to recognize the
+                                    importance of preserving these underwater habitats, home to countless species and
+                                    vital contributors to the health of our planet.
+                                </p>
+                                <p>
+                                    As divers, we have the opportunity and responsibility to be guardians of the oceans.
+                                    Our actions and behaviors have a direct impact on marine conservation.
+                                </p>
+                                <p>
+                                    From practicing responsible and ethical diving to educating and raising awareness
+                                    about the environmental issues our seas face, every step counts. Marine conservation
+                                    in diving involves not only enjoying the beauty of the ocean but also protecting it
+                                    for future generations.
+                                </p>
+                                <p>Adopting sustainable practices, avoiding harm to coral reefs, and respecting marine
+                                    life are just a few ways divers can contribute to preserving these fragile
+                                    ecosystems.
+                                </p>
+                                <p>
+                                    Together, as a community of diving enthusiasts, we hold the power to make a
+                                    difference. By uniting to protect and conserve our oceans, we ensure that these
+                                    extraordinary aquatic environments remain a treasure to be enjoyed and admired for
+                                    generations to come.
+                                </p>
+                                <p>
+                                    Marine conservation isn't merely a choice; it's a responsibility that all divers can
+                                    and should embrace.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class=" container">
+                <div class="row">
+                    <div class="col p-5 ">
+                        <h1>
+                            donde estamos:
+                        </h1>
+                        <ul class="list-group mt-5 mx-auto">
+                            <li class="list-group-item">telefono: +34 952 581 768 o +34 657 644 906</li>
+                            <li class="list-group-item">EMAIL: info@abysub.com</li>
+                            <li class="list-group-item">direccion: Local 51 del Puerto de Fuengirola, Malaga (España)
+                            </li>
+                        </ul>
+                        <div class="ratio ratio-1x1 mt-5 w-75 mx-auto">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d801.370714638506!2d-4.618929030412216!3d36.54246879827012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72e2420e21b8a9%3A0x285281593e7bd553!2sAbysub%20Escuela%20de%20buceo!5e0!3m2!1ses!2ses!4v1702035485838!5m2!1ses!2ses"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="col p-5">
+                        <form action="" method="post" onsubmit="return validacion()" class="row g-3 ">
+                            <h2>Send us a message</h2>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Name: <span class="text-danger"> *</span></label>
+                                <input onchange="resetear('nombre')" type="text" class="form-control" id="nombre"
+                                    name="nombre" aria-describedby="nombreHelp">
+                                <div id="nombreHelp" class="form-text text-danger">Name mandatory</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellidos" class="form-label">Last Name: <span class="text-danger">
+                                        *</span></label>
+                                <input onchange="resetear('apellidos')" type="text" class="form-control" id="apellidos"
+                                    name="apellidos" aria-describedby="apellidosHelp">
+                                <div id="apellidosHelp" class="form-text text-danger">Last Name mandatory</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email: <span class="text-danger">
+                                        *</span></label>
+                                <input onchange="resetear('email')" type="text" class="form-control" id="email"
+                                    name="email" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text text-danger">Give us a way to contact you back
+                                </div>
+                            </div>
+                            <div class="mb-3 ">
+                                <div class="mb-3">
+                                    <label for="validationTextarea" class="form-label">Write your message:</label>
+                                    <textarea class="form-control" id="validationTextarea"
+                                        placeholder="Your message ..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 my-5 form-check">
+                                <input type="checkbox" class="form-check-input" id="terminos">
+                                <label class="form-check-label" for="terminos">
+                                    <a id="trigger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        class="text-primary fw-bold text-decoration-none">
+                                        Agree to terms and conditions</a></label>
+                                <div id="terminosHelp" class="form-text text-danger">You must agree before submitting.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                        </form>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">TERMS AND CONDITIONS</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>This website is for educational purposes only.</h3>
+                                        Terms and Conditions: <br>
+                                        1. Introduction <br>
+                                        1.1 These Terms and Conditions govern your use of
+                                        https://buceobootstrap.netlify.app/'s contact form and any related services
+                                        provided
+                                        by
+                                        https://buceobootstrap.netlify.app/ only with educational porpouses. <br>
+                                        1.2 By using the contact form, you accept these Terms and Conditions in full. If
+                                        you
+                                        disagree with these Terms and
+                                        Conditions or any part of these Terms and Conditions, you must not use the
+                                        contact
+                                        form. <br>
+                                        2. Data Collection and Use <br>
+                                        2.1 When you use our contact form, we may collect and process personal
+                                        information
+                                        about you, such as your name, email
+                                        address, and any other information you provide.<br>
+                                        2.2 We use this information solely for the purpose of responding to your
+                                        inquiries,
+                                        providing customer support, and
+                                        maintaining a database of clients. We will not sell, rent, or otherwise disclose
+                                        your personal information to any third
+                                        parties without your consent, unless required by law.<br>
+                                        2.3 By using the contact form, you consent to the collection and processing of
+                                        your
+                                        personal information as described in
+                                        these Terms and Conditions.<br>
+                                        3. Data Protection<br>
+                                        3.1 We are committed to protecting your privacy and safeguarding your personal
+                                        information in accordance with the
+                                        General Data Protection Regulation (GDPR) and other applicable data protection
+                                        laws.<br>
+                                        3.2 We implement appropriate technical and organizational measures to ensure a
+                                        level
+                                        of security appropriate to the risk
+                                        of unauthorized access, disclosure, alteration, or destruction of your personal
+                                        information.<br>
+                                        4. Cookies<br>
+                                        4.1 We may use cookies and similar tracking technologies to improve your
+                                        experience
+                                        on our website. By using our
+                                        website, you consent to the use of cookies in accordance with our Cookie
+                                        Policy.<br>
+                                        5. Changes to Terms and Conditions<br>
+                                        5.1 We reserve the right to modify or update these Terms and Conditions at any
+                                        time
+                                        without prior notice. By continuing
+                                        to use the contact form after any such changes, you agree to be bound by the
+                                        revised
+                                        Terms and Conditions.<br>
+                                        6. Governing Law<br>
+                                        6.1 These Terms and Conditions shall be governed by and construed in accordance
+                                        with
+                                        the laws of Spain, and any
+                                        disputes relating to these Terms and Conditions shall be subject to the
+                                        exclusive
+                                        jurisdiction of the courts of Spain.<br>
+                                        7. Contact Us<br>
+                                        7.1 If you have any questions about these Terms and Conditions, please contact
+                                        us
+                                        using the information provided on our
+                                        website.<br>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Understood</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    </section>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/diving.js"></script>
+    <footer>
+        <footer class=" p-3 bg-secondary text-white">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-6 col-lg-3  p-3">
+                        <div class="col-4">
+                            <a href="#">
+                                <p>Home</p>
+                            </a>
+                            <a href="#centro">
+                                <p>About Us</p>
+                            </a>
+                            <a href="#cursos">
+                                <p>Courses</p>
+                            </a>
+                            <a href="#galeria">
+                                <p>Gallery</p>
+                            </a>
+                            <a href="#conservacion">
+                                <p>Sea preservation</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 ">
+                        <div class="col-4">
+                            <h3 id="footer-contacto">Follow us </h3>
+                            <a href="whatsapp://send?phone=34657644906" target="_blank"><i class="fa fa-whatsapp"
+                                    aria-hidden="true"></i></a>
+                            <!-- <a href="https://api.whatsapp.com/send?phone=34657644906" target="_blank"><i class="fa fa-whatsapp"
+                                      aria-hidden="true"></i></a> -->
+                            <a href="https://www.facebook.com/abysub.scubadivingmalaga/" target="_blank"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.tripadvisor.es/Attraction_Review-g315915-d1739575-Reviews-Abysub-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html#REVIEWS"
+                                target="_blank"><i class="fa fa-tripadvisor" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/abysubdiving/?hl=es" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <h3>Official website</h3>
+                            <a id="sitio-oficial" href="https://www.abysub.com/" target="_blank">AbySub</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3  p-3">
+                        <a href="https://github.com/bcolomer/BuceoBootstrap/blob/main/README.md" target="_blank"
+                            rel="noopener noreferrer">
+                            <button type="button" class="btn btn-primary">
+                                README
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/diving.js"></script>
 </body>
 
 </html>

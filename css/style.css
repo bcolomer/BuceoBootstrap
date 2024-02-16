@@ -36,6 +36,12 @@
 .bg-aqua{
     background-color: #05D1D8;
 }
+#diver{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
 /*
 
 * {
