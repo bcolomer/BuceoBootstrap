@@ -115,3 +115,27 @@ font-family: embolism;
 .w-80{
     width: 80%;
 }
+
+
+footer .fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+footer .fa-whatsapp{
+  background-color: #25D366;
+    color: white;
+
+}
+ 
+footer .fa-instagram{
+  background-color: #D43089;
+    color: white;
+
+}
+
+footer .fa-tripadvisor{
+  background-color: #00af87;
+      color: white;
+
+}
