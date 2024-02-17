@@ -31,7 +31,8 @@
 #hero {
     background-image: url('../img/paisaje-submarino1.jpg');
     background-size: cover; 
-    background-position: center;/
+    background-position: center;
+    width: 100%;/
 }
 
 #diver{

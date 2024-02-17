@@ -1,12 +1,3 @@
-/********************************************
- *  funcion sonido burbujas
- ******************************************/ 
-function sound(element){
-  document.getElementById(element).play();
-}
-function silence(element){
-  document.getElementById(element).pause();
-}
 
 
 
@@ -42,11 +33,13 @@ function validacion(){
         correcto = false;
     }
 
-    if(!terminos.checked ){  
+    if(!terminos.checked){  
         
         document.getElementById('terminosHelp').style.visibility="visible";
         document.getElementById("terminos").style.borderColor="red";
         correcto = false;
+    } else {
+    document.getElementById('terminosHelp').style.visibility = "hidden";        
     }
     return correcto;
 }
