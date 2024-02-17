@@ -40,9 +40,8 @@
   right: 20px;
   z-index: 99;
 }
+/**********  COLORS ***************/
 
-
-/***background colors ******/
 .bg-aqua{
     background-color: #05D1D8;
 }
@@ -59,17 +58,16 @@ background-color: #010D3D
 background-color: #B5E2DD;
 }
 
-/********** TEXT COLORS ***************/
+
 .text-greylight{
 color: #f2f2f2;
 }
-.deepsea{ /*aun no usada*/
-color: #03678B;
+.border-deepsea{
+border-color:  #03678B!important;
 }
 .text-fosasabisales{
 color: #010D3D
 }
-/********** BUTTON COLORS ***************/
 
 .btn-aqua{
     background-color:#0BACD0;
@@ -108,13 +106,12 @@ font-family: embolism;
 }
 
 
-
-
-
-
-
 /************* SIZES ************/
 
 .w-35{
     width: 35%;
+}
+
+.w-80{
+    width: 80%;
 }
