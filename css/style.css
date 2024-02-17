@@ -6,94 +6,105 @@
 /****************************************************************/
 
 @font-face {
-      font-family: aima;
-      src: url(../fonts/AimaDisplay.ttf);
+    font-family: aima;
+    src: url(../fonts/AimaDisplay.ttf);
 }
 @font-face {
-      font-family: garamonbb;
-      src: url(../fonts/Garamonb.ttf);
+    font-family: garamonbb;
+    src: url(../fonts/Garamonb.ttf);
 }
 @font-face {
-      font-family: diving;
-      src: url(../fonts/LostFish.ttf);
+    font-family: diving;
+    src: url(../fonts/LostFish.ttf);
 }
 @font-face {
-      font-family: garamondb;
-      src: url(../fonts/Garamond.ttf);
+    font-family: garamondb;
+    src: url(../fonts/Garamond.ttf);
     }
 @font-face {
-      font-family: embolism;
-      src: url(../fonts/Embolism.ttf);
+    font-family: embolism;
+    src: url(../fonts/Embolism.ttf);
 }
 
 
-/****hero****/
+/******* HERO SECTION **************/
 #hero {
     background-image: url('../img/paisaje-submarino1.jpg');
     background-size: cover; 
     background-position: center;
-    
 }
 
 #diver{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
 }
+
 /**********  COLORS ***************/
 
 .bg-aqua{
     background-color: #05D1D8;
 }
+
 .bg-deepblue{
-color: #023b54;
-}
-.bg-oceanblue{
-background-color: #0155D2;
-}
-.bg-fosasabisales{
-background-color: #010D3D
-}
-.bg-mexicansea{
-background-color: #B5E2DD;
+    color: #023b54;
 }
 
+.bg-oceanblue{
+    background-color: #0155D2;
+}
+
+.bg-fosasabisales{
+    background-color: #010D3D
+}
+
+.bg-mexicansea{
+    background-color: #B5E2DD;
+}
 
 .text-greylight{
-color: #f2f2f2;
+    color: #f2f2f2;
 }
+
 .border-deepsea{
-border-color:  #03678B!important;
+    border-color:  #03678B!important;
 }
+
 .text-fosasabisales{
-color: #010D3D
+    color: #010D3D
 }
 
 .btn-aqua{
     background-color:#0BACD0;
     font-family: embolism;
 }
+
 .btn-aqua:hover{
     font-weight:bolder;
     font-size:larger;
-   
-}
-/************* FONT STYLES ************/
-.aima{
-font-family: aima;
 }
 
-.garamondb{
-font-family: garamondb;
+footer .fa-facebook{
+    background: #3B5998;
+    color: white;
 }
 
-.garamonbb{
-font-family: garamonbb;
+footer .fa-whatsapp{
+    background-color: #25D366;
+    color: white;
 }
 
-.embolism{
-font-family: embolism;
+footer .fa-instagram{
+    background-color: #D43089;
+    color: white;
+
+}
+
+footer .fa-tripadvisor{
+    background-color: #00af87;
+    color: white;
+
 }
 
 .wavesnavbar{
@@ -105,6 +116,24 @@ font-family: embolism;
 .wavesnavbar:hover{
     color: #f2f2f2;
 }
+/************* FONT STYLES ************/
+.aima{
+    font-family: aima;
+}
+
+.garamondb{
+    font-family: garamondb;
+}
+
+.garamonbb{
+    font-family: garamonbb;
+}
+
+.embolism{
+    font-family: embolism;
+}
+
+
 
 
 /************* SIZES ************/
@@ -118,25 +147,3 @@ font-family: embolism;
 }
 
 
-footer .fa-facebook{
-  background: #3B5998;
-  color: white;
-}
-
-footer .fa-whatsapp{
-  background-color: #25D366;
-    color: white;
-
-}
- 
-footer .fa-instagram{
-  background-color: #D43089;
-    color: white;
-
-}
-
-footer .fa-tripadvisor{
-  background-color: #00af87;
-      color: white;
-
-}
