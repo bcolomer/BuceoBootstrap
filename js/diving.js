@@ -26,7 +26,7 @@ function validacion(){
         correcto = false;
     }
 
-    if(email=="" ||!/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(email)){
+    if(email=="" ||!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
         
         document.getElementById('emailHelp').style.visibility="visible";
         document.getElementById("email").style.borderColor="red";
