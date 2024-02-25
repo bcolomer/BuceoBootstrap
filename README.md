@@ -107,4 +107,24 @@ en la que he basado mi pagina,  y una tercera con el acceso a su pagina oficial 
 <li> Modal window</li>
 </ul>
 
-<p>Licencia copyright by Barbara Colomer</p>
+<br>
+
+<h2>Licencia de Uso:</h2>
+
+
+<p>Este sitio web y su contenido (incluyendo pero no limitado a diseño, código fuente, texto, imágenes y otros elementos) están protegidos por derechos de autor y otros derechos de propiedad intelectual. Todos los derechos están reservados, a menos que se indique lo contrario.</p>
+
+<p>Uso permitido:
+- Está permitido ver y utilizar el contenido de este sitio web para fines personales y no comerciales.</p>
+
+<p>Uso prohibido:
+- No está permitido copiar, modificar, distribuir o utilizar de otra manera el contenido de este sitio web para fines comerciales sin autorización previa.
+- No está permitido utilizar el contenido de este sitio web de manera que infrinja los derechos de autor u otros derechos de propiedad intelectual de los propietarios legítimos.</p>
+
+<p>Para obtener permiso para utilizar el contenido de este sitio web con fines comerciales, comuníquese con el propietario del sitio.</p>
+
+<p>Este sitio web puede contener enlaces a sitios web de terceros o recursos externos. No nos hacemos responsables de la disponibilidad, el contenido, las políticas de privacidad u otros aspectos de los sitios web de terceros.</p>
+
+<p>Todas las marcas comerciales, fuentes, fotografias y cualquier otro elemento utilizado en este sitio web son propiedad de sus respectivos propietarios.</p>
+
+© [2024] [Barbara Colomer]
